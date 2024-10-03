@@ -36,79 +36,66 @@ const Footer=()=>{
         <p className="text-lg font-medium text-gray-900">About Us</p>
 
         <ul className="mt-8 space-y-4 text-sm">
-          <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
-              Company History
-            </a>
-          </li>
+          <p className="text-gray-700">bright Tutorial is a group of well educated and long term experienced school organizer, resource person, teacher and social worker. We have a pool of 500+ tutors, almost 3000+ students that we are tutoring in person and online.
 
-          <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Meet the Team </a>
-          </li>
-
-          <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
-              Employee Handbook
-            </a>
-          </li>
-
-          <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Careers </a>
-          </li>
+          </p>
         </ul>
       </div>
 
       <div className="text-center sm:text-left">
-        <p className="text-lg font-medium text-gray-900">Our Services</p>
+        <p className="text-lg font-medium text-gray-900">Contact Us</p>
 
         <ul className="mt-8 space-y-4 text-sm">
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
-              Web Development
-            </a>
+            <p className="text-gray-700 transition hover:text-gray-700/75" >
+              <span>Address:</span> 1234 Elm Street, Suite 800 Austin, TX 78741]
+            </p>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Web Design </a>
+            <p className="text-gray-700 transition hover:text-gray-700/75" > 
+              <span>Phone:</span> 123-456-7890
+             </p>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Marketing </a>
+            <p className="text-gray-700 transition hover:text-gray-700/75" > 
+              <span>Email:</span> bright@gmail.com
+             </p>
           </li>
 
-          <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Google Ads </a>
-          </li>
+  
         </ul>
       </div>
 
       <div className="text-center sm:text-left">
-        <p className="text-lg font-medium text-gray-900">Resources</p>
+        <p className="text-lg font-medium text-gray-900">Open Hours </p>
 
         <ul className="mt-8 space-y-4 text-sm">
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Online Guides </a>
+            <p className="text-gray-700 transition hover:text-gray-700/75"> 
+            Our support available to help you 24 hours a day, seven days a week.
+             </p>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
-              Conference Notes
-            </a>
+            <p className="text-gray-700 transition hover:text-gray-700/75" >
+              Monday-Friday: 8am to 5pm
+            </p>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Forum </a>
+            <p className="text-gray-700 transition hover:text-gray-700/75" > 
+              Saturday: 4am to 4pm
+        </p>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Downloads </a>
+            <p className="text-gray-700 transition hover:text-gray-700/75">
+              Sunday: Closed
+              </p>
           </li>
 
-          <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
-              Upcoming Events
-            </a>
-          </li>
         </ul>
       </div>
 
@@ -116,20 +103,29 @@ const Footer=()=>{
         <p className="text-lg font-medium text-gray-900">Helpful Links</p>
 
         <ul className="mt-8 space-y-4 text-sm">
+        <li>
+            <a className="text-gray-700 transition hover:text-gray-700/75" href="/"> HOME </a>
+          </li>
+         
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> FAQs </a>
+            <a className="text-gray-700 transition hover:text-gray-700/75" href="/about"> ABOUT US </a>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Support </a>
+            <a className="text-gray-700 transition hover:text-gray-700/75" href="courses"> COURSES </a>
           </li>
-
+          <li>
+            <a className="text-gray-700 transition hover:text-gray-700/75" href="/admission"> ADMISSION </a>
+          </li>
+          <li>
+            <a className="text-gray-700 transition hover:text-gray-700/75" href="/tutors-corner"> TUTOR </a>
+          </li>
           <li>
             <a
               className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-              href="#"
+              href="/contact"
             >
-              <span className="text-gray-700 transition group-hover:text-gray-700/75"> Live Chat </span>
+              <span className="text-gray-700 transition group-hover:text-gray-700/75"> CONTACT US </span>
 
               <span className="relative flex size-2">
                 <span

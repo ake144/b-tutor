@@ -20,6 +20,7 @@ import WhatLearn from "@/components/learn";
 import News from "@/components/news";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
+import TeamMembers from "@/components/team";
 
 
 export default function Home() {
@@ -72,7 +73,7 @@ export default function Home() {
             <CarouselItem>
               <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px]">
                 <Image
-                  src="/tutor.jpg"
+                  src="/learn.jpg"
                   alt="tutorial image"
                   layout="fill"
                   objectFit="cover"
@@ -143,6 +144,9 @@ export default function Home() {
            <div>
             < WhatLearn  />
            </div>
+
+           <div>
+            <TeamMembers  />
            <div>
             <News />
            </div>
@@ -153,5 +157,6 @@ export default function Home() {
             <Footer />
            </div>
     </div>
+  </div>
   );
 }
