@@ -12,13 +12,13 @@ import Image from "next/image";
 export const PopularCourse=({filteredCourses}:any)=>{
     return(
     
-    <div className="flex flex-col items-center lg:mx-[150px] justify-center ">
+    <div className="flex flex-col  lg:mx-[150px] ">
     <div  className="items-start my-6 justify-start">
         <h1 className="text-3xl font-bold mt-12 items-start justify-start">Popular Courses</h1>
-        <Separator />
+        <Separator className="w-[280px] mt-3 mb-5"  />
     </div>
     
-    <div className="flex flex-col w-[80%] lg:w-full lg:grid  lg:grid-cols-3 lg:mx-11 gap-5">
+    <div className="flex items-center  justify-center flex-col w-[80%] lg:w-full lg:grid  lg:grid-cols-3 lg:mx-11 gap-5">
   {filteredCourses.map((course: any) => {
     const slug = course.title.toLowerCase().replace(/\s+/g, '-');
     return (

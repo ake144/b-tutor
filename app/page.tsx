@@ -19,6 +19,7 @@ import ACHIEVEMENTS from "@/components/achievement";
 import WhatLearn from "@/components/learn";
 import News from "@/components/news";
 import Footer from "@/components/footer";
+import { Button } from "@/components/ui/button";
 
 
 export default function Home() {
@@ -96,7 +97,7 @@ export default function Home() {
         </Carousel>
 
         {/* Services Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:mx-[150px]  lg:grid-cols-3 gap-6 mt-12">
           <div className="rounded-lg bg-orange-500 shadow-md p-6 flex flex-row items-center">
             <div className="flex-1">
               <h2 className="text-xl font-bold mb-2">Best Home Teacher</h2>
@@ -122,6 +123,15 @@ export default function Home() {
           </div>
         </div>
 
+
+
+                 <div className="mt-14  lg:mx-[350px] items-center justify-center flex  p-2">
+
+                       <Button variant='secondary'  className="bg-blue-600 text-white hover:text-white hover:bg-blue-600 hover:text-xl">
+                               Join Us
+                       </Button>
+                     
+                 </div>
 
          {/*  popular courses section */}
 
