@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import {
   Carousel,
@@ -21,6 +23,10 @@ import News from "@/components/news";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import TeamMembers from "@/components/team";
+import { useState } from "react";
+import { GoChevronLeft, GoChevronRight } from "react-icons/go";
+import Testimonials from "@/components/testimonials";
+import { FAQ } from "@/components/faq";
 
 
 export default function Home() {
@@ -64,38 +70,89 @@ export default function Home() {
  ]
 
 
+ const images = [
+      {
+        src: '/learn.jpg',
+        alt: 'Image 1',
+      },
+      {
+        src: '/lead.jpg',
+        alt: 'Image 2',
+      },
+      {
+        src: '/bright.jpg',
+        alt: 'Image 3',
+      },
+      {
+        src: '/tutor.jpg',
+        alt: 'Image 4',
+      },
+
+ ]
+
+
+ const [currentIndex, setCurrentIndex] = useState(0);
+
+
+
+ const handleNext = () => {
+   setCurrentIndex((prevIndex) =>
+     prevIndex === images.length - 1 ? 0 : prevIndex + 1
+   );
+ };
+
+ const handlePrevious = () => {
+   setCurrentIndex((prevIndex) =>
+     prevIndex === 0 ? images.length - 1 : prevIndex - 1
+   );
+ };
+
+
   return (
     <div className="w-full h-auto">
       <div className="px-4 md:px-12 py-8">
         {/* Carousel Section */}
-        <Carousel className="my-8">
-          <CarouselContent>
-            <CarouselItem>
-              <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px]">
-                <Image
-                  src="/learn.jpg"
-                  alt="tutorial image"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+           <div className="bg-[url('/learn.jpg')] ">
+
+
+           </div>
+
+
+           <div>
+           <Carousel className="relative mb-8 w-full">
+           <CarouselContent>
+             {images.map((image, index) => (
+            <CarouselItem key={index} hidden={index !== currentIndex}>
+              <div className="relative w-full h-[500px] md:h-[800px] lg:h-[900px]">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover"
                 />
+
               </div>
             </CarouselItem>
-            <CarouselItem>
-              <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px]">
-                <Image
-                  src="/learn.jpg"
-                  alt="learn image"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
-                />
-              </div>
-            </CarouselItem>
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+          ))}
+        </CarouselContent>
+
+        {/* Custom Previous Button */}
+        <button
+          className="absolute left-2 top-1/2 text-white transform -translate-y-1/2  text-5xl font-bold  p-7 rounded-full   transition"
+          onClick={handlePrevious}
+        >
+          <GoChevronLeft />
+        </button>
+
+        {/* Custom Next Button */}
+        <button
+          className="absolute right-2 text-white top-1/2 transform -translate-y-1/2 text-5xl font-bold p-7 rounded-full  transition"
+          onClick={handleNext}
+        >
+          <GoChevronRight />
+        </button>
+      </Carousel>
+
+           </div>
 
         {/* Services Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:mx-[150px]  lg:grid-cols-3 gap-6 mt-12">
@@ -151,11 +208,17 @@ export default function Home() {
             <News />
            </div>
 
+
+           <div>
+            <Testimonials />
+           </div>
+           <div>
+
+             <FAQ />
+           </div>
+
            
       </div>
-          <div>
-            <Footer />
-           </div>
     </div>
   </div>
   );

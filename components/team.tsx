@@ -6,19 +6,19 @@ import { CgProfile } from "react-icons/cg";
 
 const teamMembers = [
   {
-    name: 'Henok Assefa',
+    name: 'john Assefa',
     role: 'Graphics Designer',
-    image: '/HenokImage.png',
+    image: '/profile.jpg',
   },
   {
-    name: 'Medhanit Birhane',
+    name: 'Birhane',
     role: 'Script Writer',
-    image: '/MedhanitImage.jpg',
+    image: '/profile.jpg',
   },
   {
-    name: 'Tigist Fishea',
+    name: 'Fishea',
     role: 'Senior Script Writer/Director',
-    image: '/TigistImage/',
+    image: '/profile.jpg',
   },
   // Add other team members as needed
 ];
