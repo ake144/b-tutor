@@ -7,9 +7,9 @@ import {
   
   export function FAQ() {
     return (
-        <div className="flex  flex-col  mx-[30%]">
+        <div className="flex  flex-col  pt-5 my-6  mx-[30%]">
 
-         <h1 className="text-3xl  p-4  text-black ">FAQs</h1>
+         <h1 className="text-3xl  p-4  text-white ">FAQs</h1>
       <Accordion type="single" collapsible className="w-full text-white">
         <AccordionItem value="item-1">
           <AccordionTrigger>What is the currency in Ethiopia?
