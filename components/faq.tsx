@@ -10,7 +10,7 @@ import {
         <div className="flex  flex-col  mx-[30%]">
 
          <h1 className="text-3xl  p-4  text-black ">FAQs</h1>
-      <Accordion type="single" collapsible className="w-full text-black">
+      <Accordion type="single" collapsible className="w-full text-white">
         <AccordionItem value="item-1">
           <AccordionTrigger>What is the currency in Ethiopia?
           </AccordionTrigger>
